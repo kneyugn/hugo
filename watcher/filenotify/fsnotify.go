@@ -11,10 +11,10 @@ type fsNotifyWatcher struct {
 
 // Events returns the fsnotify event channel receiver
 func (w *fsNotifyWatcher) Events() <-chan fsnotify.Event {
-	return w.Watcher.Events
+	return nil
 }
 
 // Errors returns the fsnotify error channel receiver
 func (w *fsNotifyWatcher) Errors() <-chan error {
-	return w.Watcher.Errors
+	return nil
 }
